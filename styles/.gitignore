@@ -1,0 +1,10 @@
+# Dependencies (The big folders you don't want)
+node_modules/
+.pnpm-store/
+
+# System Files (Junk files)
+.DS_Store
+Thumbs.db
+
+# VS Code Local Settings (Optional - usually good to ignore personal settings)
+.vscode/
