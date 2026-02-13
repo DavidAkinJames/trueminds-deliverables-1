@@ -296,7 +296,7 @@ button {
 
 
 
-/* --- RESPONSIVENESS (MOBILE) --- */
+/* --- RESPONSIVENESS --- */
 @media (max-width: 1024px) {
   .main__wrapper {
     flex-direction: column;
