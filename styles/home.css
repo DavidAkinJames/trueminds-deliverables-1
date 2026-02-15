@@ -1,0 +1,127 @@
+/* GLOBAL RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* GlOBAL ASSETS */
+:root {
+  --WHITE: #fff;
+  --GRAY01: #bdbdbd;
+  --ORANGE09: #ff7a18;
+  --BLACK: #000000;
+  --BLUE07: #1c7ff9;
+  --BLUE04: #1e88e5;
+  --BLACK08: #1f2937;
+  --BLACK05: #292535;
+  --BLUE05: #337fff;
+  --GREEN07: #34a853;
+  --BLACK06: #3b4758;
+  --BLUE06: #4285f4;
+  --ORANGE05: #ea4335;
+  --YELLOW06: #fbbc04;
+  --ORANGE04: #ff7a18b2;
+  --GRAY04: #eef0f4;
+  --BROWN01: #4a332a;
+  --GREY01: #e5e7eb;
+  --GREY02: #d1d5db;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.2;
+}
+
+.dashboard__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: var(--WHITE);
+}
+
+.dashboard__nav-links {
+  display: flex;
+  text-decoration: none;
+  gap: 200px;
+  font-size: 1rem;
+}
+
+.dashboard__nav-links a {
+  text-decoration: none;
+  color: var(--BLACK08);
+}
+
+.dashboard__nav-menu a.active {
+  color: var(--ORANGE05);
+  font-weight: 500;
+}
+
+.button_login-nav {
+  color: var(--WHITE);
+  text-decoration: none;
+  background-color: var(--ORANGE09);
+  padding: 10px 35px;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.button_login-nav:hover {
+  background-color: var(--ORANGE05);
+}
+
+/*Home Hero Section*/
+.header__hero {
+  position: relative; /* Needed for absolute search bar */
+  height: 600px;
+  background: url('/assets/hero_image.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  margin-bottom: 60px;
+}
+
+.header__hero::before {
+ content: "";
+ position: absolute;
+ top: 0; left: 0; right: 0; bottom: 0;
+ background: rgba(0, 0, 0, 0.4); 
+}
+
+.hero__content{
+  position: relative;
+  z-index: 2;
+  color: var(--WHITE);
+  max-width: 500px;
+}
+
+.hero__content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.hero__content p {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.btn-hero {
+  display: inline-block;
+  background-color: var(--ORANGE09);
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  padding: 12px 24px;  
+  color: var(--WHITE);
+}
+
+/* 3. Floating Search Bar */
+.search__bar-container {
+  position: absolute;
+}
+

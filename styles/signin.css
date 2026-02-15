@@ -200,9 +200,10 @@ background-color: #EA4335;
 }
 
 .signup-link {
-  color: var(--BLUE07);
+  color: var(--BLACK06);
   text-decoration: none;
   font-weight: 400;
+  font-size: 14px;
 }
 
 .signup-link a {

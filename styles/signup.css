@@ -1,0 +1,406 @@
+/* GLOBAL RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* GlOBAL ASSETS */
+:root{
+  --WHITE: #fff;
+  --GRAY01: #BDBDBD;
+  --ORANGE09: #FF7A18;
+  --BLACK: #000000;
+  --BLUE07: #1C7FF9;
+  --BLUE04: #1E88E5;
+  --BLACK08: #1F2937;
+  --BLACK05: #292535;
+  --BLUE05: #337FFF;
+  --GREEN07: #34A853;
+  --BLACK06: #3B4758;
+  --BLUE06: #4285F4;
+  --ORANGE05: #EA4335;
+  --YELLOW06: #FBBC04;
+  --ORANGE04:#FF7A18B2;
+  --GRAY04:#EEF0F4;
+  --BROWN01:#4a332a;
+  --GREY01:#E5E7EB;
+  --GREY02:#d1d5db;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* --- SIGN IN PAGE STYLES --- */
+.split__screen{
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.left__panel_overlay {
+   flex: 1;
+   background:
+ linear-gradient(rgba(255, 122, 24, 0.70), rgba(255, 122, 24, 0.70)),
+    url("/assets/chuks-landing-img.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--WHITE);
+    padding: 40px;
+    text-align: center;
+}
+
+.overlay__content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.overlay__content p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/*  Right Side: The Form */
+.right__panel-form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: var(--GRAY04);
+}
+
+.form__container {
+  width: 100%;
+  max-width: 470px; 
+  text-align: center;
+}
+
+.form__logo, .footer-logo {
+  font-family: 'Island Moments', cursive; 
+  font-size:  2.5rem; 
+  margin-bottom: 20px;
+  color: var(--ORANGE09);
+}
+
+.form__container h2 {
+  font-size: 1.5rem;
+   margin-bottom: 30px;
+   color: var(--BLACK);
+   font-weight: 500;
+}
+
+/* Input Fields Styling */
+.input__group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input__group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--BLACK06);
+  margin-bottom: 8px;
+}
+
+.input__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input__wrapper input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+   border: 1px solid var(--GRAY01);
+   border-radius: 6px;
+  font-size: 1rem;
+  outline: none;    
+}
+
+.input__wrapper .icon {
+  position: absolute;
+  left: 12px;
+  color: var(--GRAY01);
+}
+
+
+.input__wrapper .visibility_off {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  color: var(--GRAY01);
+}
+
+
+/* --- CHECKBOX STYLING --- */
+.terms__checkbox {
+  display: flex;
+  align-items: flex-start; 
+  gap: 10px;
+  margin-bottom: 24px;
+  font-size: 0.9rem;
+  color: var(--BLACK06);
+  text-align: left;
+}
+
+.terms__checkbox input {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  accent-color: var(--BLUE04);
+  cursor: pointer;
+}
+
+.terms__checkbox a {
+  color: var(--BLUE04);
+  text-decoration: none;
+}
+
+
+/* Links & Buttons */
+.forgot-pass {
+  color: var(--BLUE04);
+  font-size: 0.75rem;
+  text-align: right;
+   margin-bottom: 20px;
+}
+
+.forgot-pass a {
+  color: var(--BLUE04);
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+
+.btn-submit {
+  background-color: var(--ORANGE09);
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 24px;
+  color: var(--WHITE);
+}
+
+.btn-submit:hover {
+background-color: #EA4335;
+}
+
+/* Social Login Buttons */
+.divider-text {
+  margin-bottom: 20px;
+  color: var(--BLACK06);
+  font-size: 0.75rem;
+}
+
+/* Social Login Buttons */
+.divider-text {
+  margin-bottom: 20px;
+  color: var(--BLACK06);
+  font-size: 0.75rem;
+}
+
+.btn-social {
+  width: 100%;
+  background-color: var(--WHITE);
+  border: 1px solid var(--GRAY04);
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: background 0.2s;
+}
+
+.btn-social:hover {
+  background-color: var(--GRAY01);
+}
+
+.signup-link {
+  color: var(--BLACK06);
+  text-decoration: none;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serifs;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: var(--BLUE07);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+
+
+.main__footer {
+  font-family: 'Jost', sans-serif;
+  background-color: var(--BROWN01);
+  color: var(--WHITE);
+  padding: 80px 80px 40px;
+  font-size: 0.95rem;
+  position: relative;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+
+.footer-col h3 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+
+.brand-col p {
+  margin: 20px 0;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 280px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
+.footer-links,
+.contact-info,
+.social-links {
+  list-style: none;
+}
+
+.footer-links li,
+.contact-info li,
+.social-links li {
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+
+.footer-links a,
+.social-links a {
+  color: var(--GREY02); /* Light Gray */
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover,
+.social-links a:hover {
+  color: var(--ORANGE05); 
+}
+
+
+/* Copyright & Back to Top */
+.copyright-desktop {
+  margin-top: 40px;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+.copyright-mobile {
+  display: none; /* Hidden on desktop */
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+.back-to-top {
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--BLUE07); 
+  color: var(--WHITE);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* --- MOBILE RESPONSIVE FOR SIGN IN --- */
+@media (max-width: 900px) {
+  .split__screen {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .left__panel_overlay {
+    height: 300px; /* Short header on mobile */
+    flex: none;
+    padding: 20px;
+  }
+
+  .overlay-content h1 {
+    font-size: 2.5rem;
+  }
+  .overlay-content p {
+    font-size: 1rem;
+  }
+
+  .right__panel-form {
+    padding: 40px 20px;
+    width: 100%;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr; /* Stack footer columns */
+    gap: 30px;
+  }
+
+  .back-to-top {
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .copyright-desktop {
+    display: none;
+  }
+  .copyright-mobile {
+    display: block;
+  }
+
+  .form__container {
+    max-width: 100%;
+  }
+
+  .input__wrapper input {
+    padding: 14px 14px 14px 45px; /* Larger touch target */
+    font-size: 16px; /* Prevents zooming on iPhone */
+  }
+
+  .terms__checkbox {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .terms__checkbox input {
+    margin-top: 4px; /* Align checkbox with the top line of text */
+    width: 20px;
+    height: 20px; /* Bigger checkbox for fingers */
+  }
+
+}
