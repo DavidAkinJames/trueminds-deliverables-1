@@ -22,7 +22,18 @@
     <!--Navigation Section-->
     <nav class="dashboard__nav">
       <div class="dashboard__nav-logo">Chuks Kitchen</div>
-      <div class="dashboard__nav-links">
+      <button
+        class="nav__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-primary-nav"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="dashboard__nav-links" id="mobile-primary-nav">
         <a href="home.html" class="active">Home</a>
         <a href="menu.html">Explore</a>
         <a href="#">My Orders</a>
@@ -52,7 +63,7 @@
     </header>
 
     <!--Main Content-->
-    <section class="section__container">
+    <section class="section__container bg-light">
       <h2 class="section__title">Popular Categories</h2>
       <div class="categories__grid">
         <div class="category__card">
@@ -83,7 +94,7 @@
     </section>
 
     <!--Chef's Specials Section-->
-    <section class="section__container bg-light">
+    <section class="section__container bg-light chef__specials-section">
       <h2 class="section__title">Chef's Specials</h2>
 
       <div class="section__specials-grid">
@@ -119,6 +130,7 @@
             </div>
           </div>
         </div>
+
         <!---->
         <div class="special__card">
           <img
@@ -255,5 +267,41 @@
       </div>
       <a href="#" class="back-to-top">↑</a>
     </footer>
+    <script>
+      const nav = document.querySelector(".dashboard__nav");
+      const navToggle = nav?.querySelector(".nav__toggle");
+      const navLinks = nav?.querySelector(".dashboard__nav-links");
+
+      if (nav && navToggle && navLinks) {
+        const closeNav = () => {
+          nav.classList.remove("is-open");
+          navToggle.setAttribute("aria-expanded", "false");
+          navToggle.setAttribute("aria-label", "Open navigation menu");
+        };
+
+        navToggle.addEventListener("click", () => {
+          const isOpen = nav.classList.toggle("is-open");
+          navToggle.setAttribute("aria-expanded", String(isOpen));
+          navToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
+          );
+        });
+
+        navLinks.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            if (window.innerWidth <= 640) {
+              closeNav();
+            }
+          });
+        });
+
+        window.addEventListener("resize", () => {
+          if (window.innerWidth > 640) {
+            closeNav();
+          }
+        });
+      }
+    </script>
   </body>
 </html>
