@@ -15,13 +15,22 @@
       href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/home.css" />
     <title>Home - Chuks Kitchen</title>
   </head>
   <body>
     <!--Navigation Section-->
     <nav class="dashboard__nav">
-      <div class="dashboard__nav-logo">Chuks Kitchen</div>
+      <div class="dashboard__nav-logo">
+            <a
+              style="text-decoration: none; color: var(--orange)"
+              href="index.html"
+              >Chuks Kitchen</a
+            >
+      </div>
       <button
         class="nav__toggle"
         type="button"
@@ -35,7 +44,7 @@
       </button>
       <div class="dashboard__nav-links" id="mobile-primary-nav">
         <a href="home.html" class="active">Home</a>
-        <a href="menu.html">Explore</a>
+        <a href="#">Explore</a>
         <a href="#">My Orders</a>
         <a href="#">Account</a>
       </div>
@@ -267,7 +276,7 @@
       </div>
       <a href="#" class="back-to-top">↑</a>
     </footer>
-    <!-- JAVASCRIPT SECTION -->
+    <!-- JAVASCRIPT SECTION FOR THE HAMBURGER SECTION-->
     <script>
       const nav = document.querySelector(".dashboard__nav");
       const navToggle = nav?.querySelector(".nav__toggle");
