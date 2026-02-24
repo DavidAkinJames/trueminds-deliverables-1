@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/styles/menu.css"
+    />
+    <title>Menu Page- Chuks Kitchen</title>
+  </head>
+  <body>
+    <!-- Navigation Section -->
+    <nav class="dashboard__nav">
+      <div class="dashboard__nav-logo">
+        <a
+          style="text-decoration: none; color: var(--orange)"
+          href="index.html"
+        >
+          Chuks Kitchen
+        </a>
+      </div>
+      <button
+        class="nav__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-primary-nav"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div
+        id="mobile-primary-nav"
+        class="dashboard__nav-links"
+      >
+        <a
+          href="/pages/home.html"
+          class="active"
+        >
+          Home
+        </a>
+        <a href="/pages/menu.html">Explore</a>
+        <a href="#">My Orders</a>
+        <a href="#">Account</a>
+      </div>
+      <a
+        href="/pages/signin.html"
+        class="button_login-nav"
+        >Login</a
+      >
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="header__hero">
+      <div class="hero__overlay">
+        <div class="hero__content">
+          <h1>Chuks Kitchen</h1>
+          <p>Chuks Kitchen Nigerian Home Cooking 4.8 (1.2k)</p>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content -->
+
+    <main class="main__content">
+      <section class="categories__panel">
+        <h2>Menu Categories</h2>
+        <ul class="categories__list">
+          <li
+            class="active"
+            data-category="popular"
+            role="button"
+            tabindex="0"
+            aria-selected="true"
+          >
+            Popular
+          </li>
+          <li
+            data-category="jollof-entrees"
+            role="button"
+            tabindex="0"
+            aria-selected="false"
+          >
+            Jollof Rice &amp; Entrees
+          </li>
+          <li
+            data-category="swallow-soups"
+            role="button"
+            tabindex="0"
+            aria-selected="false"
+          >
+            Swallow &amp; Soups
+          </li>
+          <li
+            data-category="grills-sides"
+            role="button"
+            tabindex="0"
+            aria-selected="false"
+          >
+            Grills &amp; sides
+          </li>
+
+          <li
+            data-category="beverages"
+            role="button"
+            tabindex="0"
+            aria-selected="false"
+          >
+            Beverages
+          </li>
+          <li
+            data-category="desserts"
+            role="button"
+            tabindex="0"
+            aria-selected="false"
+          >
+            Desserts
+          </li>
+        </ul>
+      </section>
+
+      <!-- .        -->
+      <!-- .        -->
+      <!-- .        -->
+      <div
+        id="empty-category-state"
+        class="empty__category-state"
+        aria-live="polite"
+      >
+        <h3>No items yet in this category</h3>
+        <p>Select another category or add dishes for this section.</p>
+      </div>
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <section
+        class="menu__section"
+        data-category="popular"
+      >
+        <h2 class="section__title">Popular</h2>
+        <div class="card__grid">
+          <article class="food-card">
+            <img
+              src="/assets/jollof delights.png"
+              alt="Jollof Rice and Fried Chicken"
+              class="img-jollof"
+            />
+            <div class="card-body">
+              <h3>Jollof Rice &amp; Fried Chicken</h3>
+              <p>
+                Our signature Jollof rice, served with crispy fried chicken and
+                plantain.
+              </p>
+              <div class="card-footer">
+                <span class="price">&#8358;3,500</span>
+                <button
+                  type="button"
+                  class="add-btn"
+                  aria-label="Add Jollof Rice and Fried Chicken"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img
+              src="/assets/eba and egusi goatmeat.png"
+              alt="Eba and Egusi Soup"
+              class="img-egusi"
+            />
+            <div class="card-body">
+              <h3>Eba &amp; Egusi Soup (Goat Meat)</h3>
+              <p>
+                Hearty Egusi soup with tender goat meat, served with soft Eba.
+              </p>
+              <div class="card-footer">
+                <span class="price">&#8358;3,500</span>
+                <button
+                  type="button"
+                  class="add-btn"
+                  aria-label="Add Eba and Egusi Soup"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img
+              src="/assets/pounded yam and edikaikong.png"
+              alt="Pounded Yam and edikaikong soup"
+              class="img-edikaikong"
+            />
+            <div class="card-body">
+              <h3>Pounded Yam &amp; Edikaikong</h3>
+              <p>Traditional pounded yam with rich, leafy Edikaikong soup.</p>
+              <div class="card-footer">
+                <span class="price">&#8358;3,800</span>
+                <button
+                  class="add-btn"
+                  type="button"
+                  aria-label="Add Pounded Yam and Edikaikong"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img
+              src="/assets/peppered snail.png"
+              alt="Peppered Snail"
+              class="img-snail"
+            />
+            <div class="card-body">
+              <h3>Peppered Snail</h3>
+              <p>Spicy and savory peppered snail, perfect as a started</p>
+              <div class="card-footer">
+                <span class="price">&#8358;2,500</span>
+                <button
+                  type="button"
+                  class="add-btn"
+                  aria-label="Add Peppered Snail"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img
+              src="/assets/tilapia fish.png"
+              alt="Grilled Tilapia Fish"
+              class="img-tilapia"
+            />
+            <div class="card-body">
+              <h3>Grilled Tilapia Fish</h3>
+              <p>Whole grilled tilapia seasoned with our special spices.</p>
+              <div class="card-footer">
+                <span class="price">&#8358;4,500</span>
+                <button
+                  type="button"
+                  class="add-btn"
+                  aria-label="Add Grilled Tilapia Fish"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img
+              src="/assets/jollof delights.png"
+              alt="Jollof Rice and Fried Chicken Combo"
+              class="img-follow"
+            />
+            <div class="card-body">
+              <h3>Jollof Rice &amp; Fried Chicken</h3>
+              <p>
+                Our signature Jollof rice, served with crispy fried chicken and
+                plantain.
+              </p>
+              <div class="card-footer">
+                <span class="price">&#8358;3,500</span>
+                <button
+                  class="add-btn"
+                  type="button"
+                  aria-label="Add Jollof Rice and Fried Chicken"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="menu__section"
+        data-category="jollof-entrees"
+      >
+        <h2 class="section__title">Jollof Rice &amp; Entrees</h2>
+        <div class="card-grid three up">
+          <article class="food-card">
+            <img
+              src="/assets/jollof rice and smoked fish.png"
+              alt="Jollof rice and smoked fish"
+              class="img-party"
+            />
+            <div class="card-body">
+              <h3>Jollof Rice &amp; Smoked Fish</h3>
+              <p>Flavorful jollof rice served with perfectly smoked fish.</p>
+              <div class="card-footer">
+                <span class="price">&#8358;3,500</span>
+                <button
+                  type="button"
+                  aria-label="Add Jollof Rice and Smoked Fish"
+                  class="add-btn"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img
+              src="/assets/jollof delights.png"
+              alt="Party Jollof Rice (Veg)"
+              class="img-jollof"
+            />
+            <div class="card-body">
+              <h3>Party Jollof Rice (Veg)</h3>
+              <p>Vegetarian party jollof, full of rich flavors.</p>
+              <div class="card-footer">
+                <span class="price">&#8358;2,800</span>
+                <button
+                  class="add-btn"
+                  aria-label="Add Party Jollof Rice Vegetarian"
+                  type="button"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img
+              src="/assets/jollof delights.png"
+              alt="Party Jollof Rice"
+              class="img-jollof"
+            />
+            <div class="card-body">
+              <h3>Party Jollof Rice (Veg)</h3>
+              <p>Vegetarian party jollof, full of rich flavors.</p>
+              <div class="card-footer">
+                <span class="price">&#8358;3,500</span>
+                <button
+                  type="button"
+                  aria-label="Add Party Jollof Rice"
+                  class="add-btn"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        data-category="swallow-soups"
+        class="menu__section"
+      >
+        <h2 class="section__title">Swallow &amp; Soups</h2>
+        <div class="card-grid three up">
+          <article class="food-card">
+            <img
+              src="/assets/amala and gbegeri.png"
+              alt="Amala with Gbegiri and Ewedu"
+              class="img-amala"
+            />
+            <div class="card-body">
+              <h3>Amala with Gbegiri &amp; Ewedu</h3>
+              <p>
+                Classic Amala served with Gbegiri (beans) and Ewedu (jute leaf)
+                soup.
+              </p>
+              <div class="card-footer">
+                <span class="price">&#8358;3,100</span>
+                <button
+                  type="button"
+                  aria-label="Add Amala with Gbegiri and Ewedu"
+                  class="add-btn"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img
+              src="/assets/fufu and okra soup.png"
+              alt="Fufu and Okra Soup with fish"
+              class="img-okra"
+            />
+            <div class="card-body">
+              <h3>Fufu &amp; Okra Soup (Fish)</h3>
+              <p>Light Fufu served with fresh okra soup and tilapia fish.</p>
+              <div class="card-footer">
+                <span class="price">&#8358;3,300</span>
+                <button
+                  type="button"
+                  class="add-btn"
+                  aria-label="Add Fufu and Okra Soup with fish"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="food-card">
+            <img
+              src="/assets/fufu and okra soup.png"
+              alt="Fufu and Okra Soup with tilapia"
+              class="img-okra"
+            />
+            <div class="card-body">
+              <h3>Fufu &amp; Okra Soup (Fish)</h3>
+              <p>Light Fufu served with fresh okra soup and tilapia fish.</p>
+              <div class="card-footer">
+                <span class="price">&#8358;3,500</span>
+                <button
+                  type="button"
+                  class="add-btn"
+                  aria-label="Add Fufu and Okra Soup with tilapia"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="footer-gap"></div>
+    <!--Footer Section-->
+    <footer class="main__footer">
+      <div class="footer__grid">
+        <div class="footer-col brand-col">
+          <div class="footer-logo">Chuks Kitchen</div>
+          <p>
+            Bringing the authentic flavors of Nigerian home cooking to your
+            table, with passion and care.
+          </p>
+          <div class="copyright-desktop">
+            © 2024 Chuks Kitchen. All rights reserved.
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/menu.html">Explore</a></li>
+            <li><a href="#">My Order</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <ul class="contact-info">
+            <li>+234 801 234 5678</li>
+            <li>hello@chukskitchen.com</li>
+            <li>123 Taste Blvd, Lagos, Nigeria</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Follow Us</h3>
+          <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright-mobile">
+        © 2024 Chuks Kitchen. All rights reserved.
+      </div>
+      <a
+        href="#"
+        class="back-to-top"
+        >↑</a
+      >
+      <script src="/js/menu.js"></script>
+    </footer>
+  </body>
+</html>
