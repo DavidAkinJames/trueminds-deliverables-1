@@ -2,14 +2,11 @@
 
 ## 1. Project Overview
 
-**What I Built:**
-This project is a responsive frontend interface for Chuks Kitchen, a food ordering service. It allows users to view menu items, add them to a cart, and proceed to checkout.
+Project Name: Chuks Project
 
-**Tech Stack:**
+Live Demo: [trueminds-deliverables-1.vercel.app]
 
-- **HTML5:** Used for the page structure and semantic layout.
-- **CSS3:** Used for styling, colors, and layout (Flexbox/Grid).
-- **JAVASCRIPT:** Used for hamburger menu and categories sections.
+Tech Stack: HTML, CSS, JavaScript (deployed via Vercel)
 
 ## 2. Project Structure
 
@@ -33,20 +30,20 @@ To run this project on your local machine, follow these steps:
 2. Clone the Repository
    git clone https://github.com/DavidAkinJames/trueminds-deliverables-1
 
-cd truemind-deliverables-1
+   cd truemind-deliverables-1
 
 3. Install Dependencies
    Even though node_modules is ignored by Git, you must regenerate them locally:
 
-npm install
+   npm install
 
 4. Running the Project
    Since the main entry points are now in the /pages directory, you can run a local server:
    VS Code Live Server: Open pages/index.html, right-click, and select "Open with Live Server."
    Vercel CLI (Recommended): To mimic the production environment exactly:
 
-npm i -g vercel
-vercel dev
+   npm i -g vercel
+   vercel dev
 
 Deployment Workflow
 This project is configured for Continuous Integration (CI) via Vercel:
