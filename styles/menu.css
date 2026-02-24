@@ -1,0 +1,31 @@
+/* GLOBAL RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* GlOBAL ASSETS */
+:root {
+  --WHITE: #fff;
+  --GRAY01: #bdbdbd;
+  --ORANGE09: #ff7a18;
+  --BLACK: #000000;
+  --BLUE07: #1c7ff9;
+  --BLUE04: #1e88e5;
+  --BLACK08: #1f2937;
+  --BLACK05: #292535;
+  --BLACK04: #1f2937;
+  --BLUE05: #337fff;
+  --GREEN07: #34a853;
+  --BLACK06: #3b4758;
+  --BLUE06: #4285f4;
+  --ORANGE05: #ea4335;
+  --YELLOW06: #fbbc04;
+  --ORANGE04: #ff7a18b2;
+  --GRAY04: #eef0f4;
+  --BROWN01: #4a332a;
+  --GREY01: #e5e7eb;
+  --GREY02: #d1d5db;
+  --GREY03: #f3f4f6;
+}
